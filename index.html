@@ -129,6 +129,17 @@
         transform: scale(1.1);
         transition: transform 0.3s ease;
       }
+      .card:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+        background-color: #008138;
+        color: white;
+      }
+
+      .btn-custom:hover {
+        color: black ;
+        background-color: white ;
+      }
     </style>
 </head>
 <body>
@@ -162,176 +173,164 @@
   
   <div class="container mb-5" id="home">
     <div class="row">
-      <div class="col d-flex flex-column justify-content-evenly">
+      <div class="col d-flex flex-column gap-4 justify-content-center">
         <div>
           <h1 class="card-title">Netra</h1>
         <h2 class="card-subtitle mb-2 text-muted">Glaucoma awareness campaign</h2>
         </div>
         <div>
-          <p style="font-weight: 600;">Our aim with the Netra Campaign is to raise widespread awareness about glaucoma. We seek to ensure that everyone comprehends what glaucoma entails and why early detection is crucial. <br> By educating individuals on recognizing its signs and prompting action, we strive to diminish the incidence of glaucoma-related blindness.</p>
+          <p style="font-weight: 500; font-size: 18px; text-align: justify;">Our aim with the Netra Campaign is to raise widespread awareness about glaucoma. We seek to ensure that everyone comprehends what glaucoma entails and why early detection is crucial. <br> By educating individuals on recognizing its signs and prompting action, we strive to diminish the incidence of glaucoma-related blindness.</p>
         </div>
         <div>
-          <p class="card-text text-format-i">Remember, early intervention can help preserve your vision and quality of life.</p>
+          <p class="card-text text-format-i" style="font-size: 18px;">Remember, early intervention can help preserve your vision and quality of life.</p>
         </div>
       </div>
       <div class="col d-flex justify-content-center">
-          <img src="images/hero.jpg" alt="Netra" width="95%" height="auto" class="img-fluid rounded shadow mb-5">
+          <img src="images/hero.jpg" alt="Netra" width="95%" height="auto" class="img-fluid rounded-5 shadow mb-5">
       </div>
     </div>
   </div>
 
-<div class="container my-4" id="schedule" data-bs-spy="scroll" data-bs-target="#navbar">
-  <h2>Day 1 (March 11, 2024)</h2><br>
-  <div class="row">
-      <div class="col-4 col-sm-4 mb-4 ">
-          <div class="card rounded-4 shadow" style="background-color: #4CAF50;">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
-                  <h5 class="card-title">Openeing Speech by hosts</h5>
-                  <p class="card-text"><span class="span">Time: </span>11:00 AM - 11:15 AM</p>
-                  <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
-                  <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
-              </div>
-          </div>
-      </div>
-      <div class="col-4 col-sm-4 mb-4">
-          <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
-                  <h5 class="card-title">Drama Performance</h5>
-                  <p class="card-text"><span class="span">Time: </span>11:20 AM - 11:30 AM</p>
-                  <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
-                  <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
-              </div>
-          </div>
-      </div>
-      <div class="col-4 col-sm-4 mb-4">
-          <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
-                  <h5 class="card-title">Speech by Netra Apex</h5>
-                  <p class="card-text"><span class="span">Time: </span>11:35 AM - 11:40 AM</p>
-                  <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
-                  <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
-              </div>
-          </div>
-      </div>
-      <div class="col-4 col-sm-4 mb-4">
-          <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
-                  <h5 class="card-title">Speech by Priyanka Roy Ma'am</h5>
-                  <p class="card-text"><span class="span">Time: </span>11:40 AM - 11:45 AM</p>
-                  <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
-                  <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
-              </div>
-          </div>
-      </div>
-      <div class="col-4 col-sm-4 mb-4">
-          <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
-                  <h5 class="card-title">Guest Speaker Session</h5>
-                  <p class="card-text"><span class="span">Time: </span>11:50 AM - 12:20 PM</p>
-                  <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
-                  <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
-              </div>
-          </div>
-      </div>
-      <div class="col-4 col-sm-4 mb-4">
-          <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
-                  <h5 class="card-title">Music Committee Performance</h5>
-                  <p class="card-text"><span class="span">Time: </span>12:30 AM - 12:45 PM</p>
-                  <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
-                  <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
-              </div>
-          </div>
-      </div>
-      <div class="col-4 col-sm-4 mb-4">
-          <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
-                  <h5 class="card-title">Dance Performance</h5>
-                  <p class="card-text"><span class="span">Time: </span>12:50 AM - 1:00 PM</p>
-                  <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
-                  <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
-              </div>
-          </div>
-      </div>
-      <div class="col-4 col-sm-4 mb-4">
-          <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
-                  <h5 class="card-title">Ball in the Basket</h5>
-                  <p class="card-text"><span class="span">Time: </span>2:00 PM - 3:30 PM</p>
-                  <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
-                  <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
-              </div>
-          </div>
-      </div>
-      <div class="col-4 col-sm-4 mb-4">
-          <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
-                  <h5 class="card-title">Table Tennis Juggle</h5>
-                  <p class="card-text"><span class="span">Time: </span>2:00 PM - 3:30 PM</p>
-                  <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
-                  <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
-              </div>
-          </div>
-      </div>
-      <div class="col-4 col-sm-4 mb-4">
-          <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
-                  <h5 class="card-title">Ring Toss</h5>
-                  <p class="card-text"><span class="span">Time: </span>2:00 PM - 3:30 PM</p>
-                  <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
-                  <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
-              </div>
-          </div>
-      </div>
-      <div class="col-4 col-sm-4 mb-4">
-          <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
-                  <h5 class="card-title">Pin the Tail</h5>
-                  <p class="card-text"><span class="span">Time: </span>2:00 PM - 3:30 PM</p>
-                  <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
-                  <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
-              </div>
-          </div>
-      </div>
-      <div class="col-4 col-sm-4 mb-4">
-          <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
-                  <h5 class="card-title">Inter-Committee Antakshari</h5>
-                  <p class="card-text"><span class="span">Time: </span>3:30 PM - 4:00 PM</p>
-                  <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
-                  <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
-              </div>
-          </div>
-      </div>
+  <div class="container my-4" id="schedule" data-bs-spy="scroll" data-bs-target="#navbar">
+    <h4 class="card-title bold mb-5 mt-5 text-center" id="about">Schedule</h4>
+    <h5>Day 1 (March 11, 2024)</h5><br>
+    <div class="row">
+        <div class="col-4 col-sm-4 mb-4 ">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Openeing Speech by hosts</h5>
+                    <p class="card-text"><span class="span">Time: </span>11:00 AM - 11:15 AM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Drama Performance</h5>
+                    <p class="card-text"><span class="span">Time: </span>11:20 AM - 11:30 AM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Speech by Netra Apex</h5>
+                    <p class="card-text"><span class="span">Time: </span>11:35 AM - 11:40 AM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Speech by Priyanka Roy Ma'am</h5>
+                    <p class="card-text"><span class="span">Time: </span>11:40 AM - 11:45 AM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Guest Speaker Session</h5>
+                    <p class="card-text"><span class="span">Time: </span>11:50 AM - 12:20 PM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Music Committee Performance</h5>
+                    <p class="card-text"><span class="span">Time: </span>12:30 AM - 12:45 PM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Dance Performance</h5>
+                    <p class="card-text"><span class="span">Time: </span>12:50 AM - 1:00 PM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Ball in the Basket</h5>
+                    <p class="card-text"><span class="span">Time: </span>2:00 PM - 3:30 PM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Table Tennis Juggle</h5>
+                    <p class="card-text"><span class="span">Time: </span>2:00 PM - 3:30 PM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Ring Toss</h5>
+                    <p class="card-text"><span class="span">Time: </span>2:00 PM - 3:30 PM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Pin the Tail</h5>
+                    <p class="card-text"><span class="span">Time: </span>2:00 PM - 3:30 PM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Inter-Committee Antakshari</h5>
+                    <p class="card-text"><span class="span">Time: </span>3:30 PM - 4:00 PM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h5>Day 2 (March 12, 2024)</h5><br>
+    <div class="col-4 col-sm-4 mb-4">
+        <div class="card rounded-4 shadow">
+            <div class="card-body" id="card-hover">
+                <h5 class="card-title">Free Eye Checkup</h5>
+                <p class="card-text"><span class="span">Time: </span>9:00 AM - 4:00 PM</p>
+                <p class="card-text"><span class="span">Venue:</span> First Floor Seminar Hall</p>
+                <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+            </div>
+        </div>
+    </div>
   </div>
-  <h2>Day 2 (March 12, 2024)</h2><br>
-  <div class="col-4 col-sm-4 mb-4">
-      <div class="card rounded-4 shadow">
-          <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-          <div class="card-body">
-              <h5 class="card-title">Free Eye Checkup</h5>
-              <p class="card-text"><span class="span">Time: </span>9:00 AM - 4:00 PM</p>
-              <p class="card-text"><span class="span">Venue:</span> First Floor Seminar Hall</p>
-              <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
-          </div>
-      </div>
-  </div>
-</div>
 
 <div class="accordion container mt-5 mb-5" id="accordionExample">
-  <h4 class="card-title bold mb-5 mt-5" id="about">About Glaucoma</h4>
+  <h4 class="card-title bold mb-5 mt-5 text-center" id="about">About Glaucoma</h4>
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -391,7 +390,7 @@
 </div>
 
 <!-- Footer -->
-<footer class="text-center text-lg-start text-white" style="background-color: #1c2331; position: relative; bottom: 0; left: 0; width: 100%;">
+<footer class="text-center text-lg-start text-white" id="contact" style="background-color: #1c2331; position: relative; bottom: 0; left: 0; width: 100%;">
   <!-- Section: Social media -->
   <section
            class="d-flex justify-content-between p-4"
@@ -405,10 +404,10 @@
 
     <!-- Right -->
     <div>
-      <a href="https://www.instagram.com/netra_campaign/" class="text-white me-4">
+      <a href="https://www.instagram.com/netra_campaign/" class="text-white me-4 text-decoration-none">
         <i class="fab fa-instagram fa-2xl"></i>
       </a>
-      <a href="https://www.linkedin.com/company/netra-campaign/" class="text-white me-4">
+      <a href="https://www.linkedin.com/company/netra-campaign/" class="text-white me-4 text-decoration-none">
         <i class="fab fa-linkedin fa-2xl"></i>
       </a>
     </div>
@@ -509,7 +508,21 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
+<script>
+  var cards = document.querySelectorAll('#card-hover');
 
+  cards.forEach(card => {
+    var btn = card.querySelector('a');
+    card.addEventListener('mouseover', function() {
+      btn.classList.add('btn-custom-hover');
+    })
+
+    card.addEventListener('mouseout', function() {
+      btn.classList.remove('btn-custom-hover');
+    });
+  }
+  )
+</script>
 
 </body>
 </html>
