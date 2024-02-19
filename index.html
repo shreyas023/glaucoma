@@ -6,24 +6,522 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/7982dd6bf1.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/favicon.ico">
     <title>Netra | Campaign</title>
+    <style>
+    .span{
+        font-weight: bold;
+    }
+    .btn-custom{
+        background-color: #57ad44;
+        color: white;
+    }
+    .btn-custom:hover{
+        background-color: #008138;
+        color: white;
+        transition: all;
+        transition-duration: 300ms;
+        box-shadow: 2.5px 2.5px #57ad44;
+    }
+    .card:hover{
+        transform: scale(1.1);
+        transition: all;
+        transition-duration: 300ms;
+    }
+    .download-button {
+        display: inline-block;
+        background-color: #4CAF50; 
+        border: 2px solid transparent;
+        border-radius: 15px;
+        color: white;
+        padding: 15px 22px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+    }
+    .download-button:hover {
+        background-color: white; 
+        color: black; 
+        border: 2px solid #4CAF50;
+    }
+      .bold{
+        font-weight: bold;
+        font-size: 30px;
+        color: #57ad44;
+      }
+
+      .about{
+        padding: 8px 10px 10px 8px;
+        color: #008138;
+        transition: 0.3s; 
+      }
+
+      .about:hover{
+        color: #4CAF50;
+      }
+
+      .text-format{
+        font-weight: 400;
+        padding: 8px 10px 10px 8px;
+        font-size: 17px;
+      }
+
+      .text-format-i{
+        font-weight: 400;
+        padding: 8px 10px 10px 8px;
+        font-size: 17px;
+        font-style: italic;
+        color: #57ad44;
+        transition: 0.3s; 
+      }
+
+      .text-format-i:hover{
+        color: #008138;
+      }
+
+      /* Hover animation for cards */
+      .card:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+      }
+
+      .navbar {
+        background-color: #57ad44;
+      }
+
+      .navbar-brand {
+        color: white;
+        font-weight: bold;
+      }
+
+      .navbar-nav .nav-link {
+        color: white;
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: #f0f0f0;
+      }
+      body{
+        padding-top: 100px;
+      }
+      .menubtns{
+        margin-left: 50px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .download:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+      }
+      .nav-link{
+        margin: 0px 10px;
+      }
+      .nav-link:hover{
+        color: #f0f0f0;
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+      }
+      .logo-img:hover{
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+      }
+      .card:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+        background-color: #008138;
+        color: white;
+      }
+
+      .btn-custom:hover {
+        color: black ;
+        background-color: white ;
+      }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="./index.html">Netra</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="./about-me.html">About</a>
-        
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      
+      <a class="navbar-brand" href="#home"><img src="images/logo.png" alt="Netra" height="50px" width="auto" class="logo-img"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse menubtns" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#schedule">Schedule</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </div>
+      </div>
+      
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="images/NETRA.pdf" download>
+            <button class="btn btn-light download" style="font-weight: 500; font-size: 16px;">Download Brochure</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="container mb-5" id="home">
+    <div class="row">
+      <div class="col d-flex flex-column gap-4 justify-content-center">
+        <div>
+          <h1 class="card-title">Netra</h1>
+          <h2 class="card-subtitle mb-2 text-muted">Glaucoma awareness campaign</h2>
+        </div>
+        <div>
+          <p style="font-weight: 500; font-size: 18px; text-align: justify;">Our aim with the Netra Campaign is to raise widespread awareness about glaucoma. We seek to ensure that everyone comprehends what glaucoma entails and why early detection is crucial. <br> By educating individuals on recognizing its signs and prompting action, we strive to diminish the incidence of glaucoma-related blindness.</p>
+        </div>
+        <div>
+          <p class="card-text text-format-i" style="font-size: 18px;">Remember, early intervention can help preserve your vision and quality of life.</p>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+          <img src="images/hero.jpg" alt="Netra" width="95%" height="auto" class="img-fluid rounded-5 shadow mb-5">
       </div>
     </div>
   </div>
-</nav>
+
+  <div class="container my-4">
+    <h4 class="card-title bold mb-5 mt-5 text-center" id="schedule">Schedule</h4>
+    <h5>Day 1 (March 11, 2024)</h5><br>
+    <div class="row">
+        <div class="col-4 col-sm-4 mb-4 ">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Openeing Speech by hosts</h5>
+                    <p class="card-text"><span class="span">Time: </span>11:00 AM - 11:15 AM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Drama Performance</h5>
+                    <p class="card-text"><span class="span">Time: </span>11:20 AM - 11:30 AM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Speech by Netra Apex</h5>
+                    <p class="card-text"><span class="span">Time: </span>11:35 AM - 11:40 AM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Speech by Priyanka Roy Ma'am</h5>
+                    <p class="card-text"><span class="span">Time: </span>11:40 AM - 11:45 AM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Guest Speaker Session</h5>
+                    <p class="card-text"><span class="span">Time: </span>11:50 AM - 12:20 PM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Music Committee Performance</h5>
+                    <p class="card-text"><span class="span">Time: </span>12:30 AM - 12:45 PM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Dance Performance</h5>
+                    <p class="card-text"><span class="span">Time: </span>12:50 AM - 1:00 PM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Ball in the Basket</h5>
+                    <p class="card-text"><span class="span">Time: </span>2:00 PM - 3:30 PM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Table Tennis Juggle</h5>
+                    <p class="card-text"><span class="span">Time: </span>2:00 PM - 3:30 PM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Ring Toss</h5>
+                    <p class="card-text"><span class="span">Time: </span>2:00 PM - 3:30 PM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Pin the Tail</h5>
+                    <p class="card-text"><span class="span">Time: </span>2:00 PM - 3:30 PM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 mb-4">
+            <div class="card rounded-4 shadow">
+                <div class="card-body" id="card-hover">
+                    <h5 class="card-title">Inter-Committee Antakshari</h5>
+                    <p class="card-text"><span class="span">Time: </span>3:30 PM - 4:00 PM</p>
+                    <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
+                    <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h5>Day 2 (March 12, 2024)</h5><br>
+    <div class="col-4 col-sm-4 mb-4">
+        <div class="card rounded-4 shadow">
+            <div class="card-body" id="card-hover">
+                <h5 class="card-title">Free Eye Checkup</h5>
+                <p class="card-text"><span class="span">Time: </span>9:00 AM - 4:00 PM</p>
+                <p class="card-text"><span class="span">Venue:</span> First Floor Seminar Hall</p>
+                <a href="#todo" class="btn btn-custom rounded-4">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="accordion container mt-5 mb-5" id="accordionExample">
+  <h4 class="card-title bold mb-5 mt-5 text-center" id="about">About Glaucoma</h4>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <strong>What is Glaucoma?</strong>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p class="card-text text-format"><strong>Glaucoma</strong> is a group of eye conditions that damage the optic nerve, typically due to increased pressure within the eye. This damage can lead to vision loss and even blindness if left untreated. Glaucoma often develops gradually and without symptoms, making regular eye exams crucial for early detection and management. Treatment usually involves medications, laser therapy, or surgery to lower intraocular pressure and preserve vision.
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <strong>Symptoms of Glaucoma</strong> 
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p class="card-text text-format">
+        It often develops slowly over time and without noticeable symptoms, which is why regular eye exams are crucial. However, some people may experience symptoms such as: </p>
+              <strong>
+                <ol class="card-text">
+                    <li>Blurred vision</li>
+                    <li>Eye pain or redness</li>
+                    <li>Seeing halos around lights</li>
+                    <li>Tunnel vision</li>
+                    <li>Nausea or vomiting (especially in severe cases)</li>
+                </ol>
+              </strong>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <strong>Treatment Options</strong>
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p class="card-text text-format">Early detection is the key to preventing vision loss from glaucoma. Treatment options vary depending on the type and severity of the condition, but may include:</p>
+              <strong>
+                <ol class="card-text">
+                    <li>Eye drops to reduce intraocular pressure</li>
+                    <li>Oral medications to lower eye pressure</li>
+                    <li>Laser therapy to improve drainage of fluid from the eye</li>
+                    <li>Tunnel vision</li>
+                    <li>Surgery to create a new drainage pathway or implant a drainage device</li>
+                </ol>
+              </strong>
+                <p class="card-text text-format">It's important to consult an eye care professional for proper diagnosis and management if you suspect you may have glaucoma.</p>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start text-white" id="contact" style="background-color: #1c2331; position: relative; bottom: 0; left: 0; width: 100%;">
+  <!-- Section: Social media -->
+  <section
+           class="d-flex justify-content-between p-4"
+           style="background-color: #008138"
+           >
+    <!-- Left -->
+    <div class="me-5">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="https://www.instagram.com/netra_campaign/" class="text-white me-4 text-decoration-none">
+        <i class="fab fa-instagram fa-2xl"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/netra-campaign/" class="text-white me-4 text-decoration-none">
+        <i class="fab fa-linkedin fa-2xl"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold">NETRA CAMPAIGN</h6>
+          <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: #008138; height: 2px"
+              />
+          <p>Illuminating the path to eye health | </p>
+          <p>Raising Glaucoma awareness | </p>
+          <p>Join the vision revolution</p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold">Products</h6>
+          <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: #008138; height: 2px"
+              />
+          <p>
+            <a href="#!" class="text-white">MDBootstrap</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white">MDWordPress</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white">BrandFlow</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white">Bootstrap Angular</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold">Useful links</h6>
+          <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: #008138; height: 2px"
+              />
+          <p>
+            <a href="#!" class="text-white">Your Account</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white">Become an Affiliate</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white">Shipping Rates</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold">Contact</h6>
+          <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: #008138; height: 2px"
+              />
+          <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+          <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+          <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+<script>
+  var cards = document.querySelectorAll('#card-hover');
+
+  cards.forEach(card => {
+    var btn = card.querySelector('a');
+    card.addEventListener('mouseover', function() {
+      btn.classList.add('btn-custom-hover');
+    })
+
+    card.addEventListener('mouseout', function() {
+      btn.classList.remove('btn-custom-hover');
+    });
+  }
+  )
+</script>
+
 </body>
 </html>
