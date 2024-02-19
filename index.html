@@ -84,6 +84,13 @@
       .card:hover {
         transform: translateY(-5px);
         transition: transform 0.3s ease;
+        background-color: #57ad44;
+        color: white;
+      }
+
+      .btn-custom-hover {
+        color: black !important;
+        background-color: white !important;
       }
 
       .navbar {
@@ -158,9 +165,8 @@
   <h2>Day 1 (March 11, 2024)</h2><br>
   <div class="row">
       <div class="col-4 col-sm-4 mb-4 ">
-          <div class="card rounded-4 shadow" style="background-color: #4CAF50;">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
+          <div class="card rounded-4 shadow">
+              <div class="card-body" id="card-hover">
                   <h5 class="card-title">Openeing Speech by hosts</h5>
                   <p class="card-text"><span class="span">Time: </span>11:00 AM - 11:15 AM</p>
                   <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
@@ -170,8 +176,7 @@
       </div>
       <div class="col-4 col-sm-4 mb-4">
           <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
+              <div class="card-body" id="card-hover">
                   <h5 class="card-title">Drama Performance</h5>
                   <p class="card-text"><span class="span">Time: </span>11:20 AM - 11:30 AM</p>
                   <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
@@ -181,8 +186,7 @@
       </div>
       <div class="col-4 col-sm-4 mb-4">
           <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
+              <div class="card-body" id="card-hover">
                   <h5 class="card-title">Speech by Netra Apex</h5>
                   <p class="card-text"><span class="span">Time: </span>11:35 AM - 11:40 AM</p>
                   <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
@@ -192,8 +196,7 @@
       </div>
       <div class="col-4 col-sm-4 mb-4">
           <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
+              <div class="card-body" id="card-hover">
                   <h5 class="card-title">Speech by Priyanka Roy Ma'am</h5>
                   <p class="card-text"><span class="span">Time: </span>11:40 AM - 11:45 AM</p>
                   <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
@@ -203,8 +206,7 @@
       </div>
       <div class="col-4 col-sm-4 mb-4">
           <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
+              <div class="card-body" id="card-hover">
                   <h5 class="card-title">Guest Speaker Session</h5>
                   <p class="card-text"><span class="span">Time: </span>11:50 AM - 12:20 PM</p>
                   <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
@@ -214,8 +216,7 @@
       </div>
       <div class="col-4 col-sm-4 mb-4">
           <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
+              <div class="card-body" id="card-hover">
                   <h5 class="card-title">Music Committee Performance</h5>
                   <p class="card-text"><span class="span">Time: </span>12:30 AM - 12:45 PM</p>
                   <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
@@ -225,8 +226,7 @@
       </div>
       <div class="col-4 col-sm-4 mb-4">
           <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
+              <div class="card-body" id="card-hover">
                   <h5 class="card-title">Dance Performance</h5>
                   <p class="card-text"><span class="span">Time: </span>12:50 AM - 1:00 PM</p>
                   <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
@@ -236,8 +236,7 @@
       </div>
       <div class="col-4 col-sm-4 mb-4">
           <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
+              <div class="card-body" id="card-hover">
                   <h5 class="card-title">Ball in the Basket</h5>
                   <p class="card-text"><span class="span">Time: </span>2:00 PM - 3:30 PM</p>
                   <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
@@ -247,8 +246,7 @@
       </div>
       <div class="col-4 col-sm-4 mb-4">
           <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
+              <div class="card-body" id="card-hover">
                   <h5 class="card-title">Table Tennis Juggle</h5>
                   <p class="card-text"><span class="span">Time: </span>2:00 PM - 3:30 PM</p>
                   <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
@@ -258,8 +256,7 @@
       </div>
       <div class="col-4 col-sm-4 mb-4">
           <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
+              <div class="card-body" id="card-hover">
                   <h5 class="card-title">Ring Toss</h5>
                   <p class="card-text"><span class="span">Time: </span>2:00 PM - 3:30 PM</p>
                   <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
@@ -269,8 +266,7 @@
       </div>
       <div class="col-4 col-sm-4 mb-4">
           <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
+              <div class="card-body" id="card-hover">
                   <h5 class="card-title">Pin the Tail</h5>
                   <p class="card-text"><span class="span">Time: </span>2:00 PM - 3:30 PM</p>
                   <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
@@ -280,8 +276,7 @@
       </div>
       <div class="col-4 col-sm-4 mb-4">
           <div class="card rounded-4 shadow">
-              <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-              <div class="card-body">
+              <div class="card-body" id="card-hover">
                   <h5 class="card-title">Inter-Committee Antakshari</h5>
                   <p class="card-text"><span class="span">Time: </span>3:30 PM - 4:00 PM</p>
                   <p class="card-text"><span class="span">Venue:</span> Auditorium</p>
@@ -293,8 +288,7 @@
   <h2>Day 2 (March 12, 2024)</h2><br>
   <div class="col-4 col-sm-4 mb-4">
       <div class="card rounded-4 shadow">
-          <!-- <img src="https://via.placeholder.com/150" class="card-img-top rounded-4" alt="..."> -->
-          <div class="card-body">
+          <div class="card-body" id="card-hover">
               <h5 class="card-title">Free Eye Checkup</h5>
               <p class="card-text"><span class="span">Time: </span>9:00 AM - 4:00 PM</p>
               <p class="card-text"><span class="span">Venue:</span> First Floor Seminar Hall</p>
@@ -363,6 +357,20 @@
   </div>
 </div>
 </div>
+<script>
+  var cards = document.querySelectorAll('#card-hover');
 
+  cards.forEach(card => {
+    var btn = card.querySelector('a');
+    card.addEventListener('mouseover', function() {
+      btn.classList.add('btn-custom-hover');
+    })
+
+    card.addEventListener('mouseout', function() {
+      btn.classList.remove('btn-custom-hover');
+    });
+  }
+  )
+</script>
 </body>
 </html>
