@@ -154,6 +154,34 @@
       color: black;
       background-color: white;
     }
+
+    #darkModeToggle {
+      cursor: pointer;
+    }
+
+    :root {
+      --primary-color: white;
+    }
+
+    .dark-mode {
+      background-color: #1c2331;
+      color: white;
+    }
+
+    .dark-mode .navbar {
+      background-color: #333;
+    }
+
+    #lightmode-text {
+      color: #fff;
+    }
+    #darkmode-text {
+      color: #fff;
+      display: none;
+    }
+
+/* Add other dark mode styles here */
+
   </style>
 </head>
 
@@ -178,6 +206,11 @@
       </div>
 
       <ul class="nav justify-content-end">
+        <li style="display: flex; align-items: center; gap: 10px;">
+          <span class="material-symbols-outlined" id="lightmode-text">Light mode</span>
+          <span class="material-symbols-outlined" id="darkmode-text">Dark mode</span>
+          <img src="toggle-off.png" id="darkModeToggle" onclick="toggleDarkMode()">
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="images/NETRA.pdf" download>
             <button class="btn btn-light download" style="font-weight: 500; font-size: 16px;">Download Brochure</button>
@@ -192,7 +225,7 @@
       <div class="col d-flex flex-column gap-4 justify-content-center">
         <div>
           <h1 class="card-title">Netra</h1>
-          <h2 class="card-subtitle mb-2 text-muted">Glaucoma awareness campaign</h2>
+          <h2 class="card-subtitle mb-2" style="color: #959595;">Glaucoma awareness campaign</h2>
         </div>
         <div>
           <p style="font-weight: 500; font-size: 18px; text-align: justify;">Our aim with the Netra Campaign is to raise
@@ -443,10 +476,6 @@
         <a href="https://www.linkedin.com/company/netra-campaign/" class="text-white me-4 text-decoration-none">
           <i class="fab fa-linkedin fa-2xl"></i>
         </a>
-        <a href="https://www.linkedin.com/company/netra-campaign/" class="text-white me-4 text-decoration-none">
-          <i class="fa-brands fa-square-facebook fa-2xl"></i>
-        </a>
-
       </div>
       <!-- Right -->
     </section>
@@ -488,7 +517,6 @@
             </p>
             <p>
               <a href="#about" class="text-white">About</a>
-
             </p>
           </div>
           <!-- Grid column -->
@@ -509,7 +537,6 @@
             </p>
             <p>
               <a href="https://glaucoma.org/learn-about-glaucoma/treating-glaucoma/" class="text-white">Treatment Options</a>
-
             </p>
           </div>
           <!-- Grid column -->
@@ -561,6 +588,26 @@
       });
     }
     )
+
+    function toggleDarkMode() {
+      var body = document.body;
+      var darkModeToggle = document.getElementById("darkModeToggle");
+      var dark = document.getElementById("darkmode-text");
+      var light = document.getElementById("lightmode-text");
+      body.classList.toggle("dark-mode");
+
+      // Change the toggle icon based on the current mode
+      if (body.classList.contains("dark-mode")) {
+        darkModeToggle.src = "./toggle-on.png"; // Adjust the path as needed
+        light.style.display = "none";
+        dark.style.display = "inline-block";
+
+      } else {
+        darkModeToggle.src = "./toggle-off.png"; // Adjust the path as needed
+        dark.style.display = "none";
+        light.style.display = "inline-block";
+      }
+    }
   </script>
 
 </body>
