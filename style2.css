@@ -1,0 +1,13 @@
+.carousel-inner {
+    display: flex;
+    flex-direction: row;
+    /* Ensure the cards are displayed horizontally */
+}
+
+.carousel-item {
+    display: flex;
+    flex: 0 0 auto;
+    /* Prevent cards from stretching */
+    width: auto;
+    /* Allow cards to take the necessary space */
+}

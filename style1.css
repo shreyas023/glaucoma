@@ -1,0 +1,94 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.carousel-slide {
+    display: flex;
+    flex-direction: row;
+}
+
+.carousel-inner {
+    display: flex;
+    flex-direction: row;
+}
+
+.carousel-item {
+    display: flex;
+    flex: 0 0 auto;
+    height: auto;
+    width: auto;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img-top {
+    border-radius: 50px;
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    margin-left: 35px;
+    transition: width 2s height 5s;
+    animation-duration: 10s;
+}
+
+.card {
+    align-items: center;
+    position: relative;
+    border-radius: 30px;
+    border: 2px solid black;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    background-color: #0ef844;
+}
+
+.card-body {
+    position: relative;
+    align-items: center;
+    padding: 15px;
+    margin: -15px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-body {
+    transform: scale(1.2);
+}
+
+.btn-primary {
+    border-radius: 50px;
+    width: 120px;
+}
+
+.btn-primary:hover {
+    background-color: black;
+}
+
+h3,
+h5 {
+    color: rgb(0, 91, 28);
+}
+
+.hover-image {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+card-body:hover .card-img-top {
+    display: none;
+}
+
+.card-body:hover .hover-image {
+    display: block;
+}
