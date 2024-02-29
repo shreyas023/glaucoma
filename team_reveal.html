@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/7982dd6bf1.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="images/favicon-96x96.png">
+</head>
+<title>Team Reveal</title>
+<style>
+    .span {
+      font-weight: bold;
+    }
+
+    .btn-custom {
+      background-color: #57ad44;
+      color: white;
+    }
+
+    .btn-custom:hover {
+      background-color: #008138;
+      color: white;
+      transition: all;
+      transition-duration: 300ms;
+      box-shadow: 2.5px 2.5px #57ad44;
+    }
+
+    .card:hover {
+      transform: scale(1.1);
+      transition: all;
+      transition-duration: 300ms;
+    }
+
+    .download-button {
+      display: inline-block;
+      background-color: #4CAF50;
+      border: 2px solid transparent;
+      border-radius: 15px;
+      color: white;
+      padding: 15px 22px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+    }
+
+    .download-button:hover {
+      background-color: white;
+      color: black;
+      border: 2px solid #4CAF50;
+    }
+
+    .bold {
+      font-weight: bold;
+      font-size: 30px;
+      color: #57ad44;
+    }
+
+    .about {
+      padding: 8px 10px 10px 8px;
+      color: #008138;
+      transition: 0.3s;
+    }
+
+    .about:hover {
+      color: #4CAF50;
+    }
+
+    .text-format {
+      font-weight: 400;
+      padding: 8px 10px 10px 8px;
+      font-size: 17px;
+    }
+
+    .text-format-i {
+      font-weight: 400;
+      padding: 8px 10px 10px 8px;
+      font-size: 17px;
+      font-style: italic;
+      color: #57ad44;
+      transition: 0.3s;
+    }
+
+    .text-format-i:hover {
+      color: #008138;
+    }
+
+    /* Hover animation for cards */
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    .navbar {
+      background-color: #57ad44;
+    }
+
+    .navbar-brand {
+      color: white;
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-link {
+      color: white;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #f0f0f0;
+    }
+
+    body {
+      padding-top: 100px;
+    }
+
+    .menubtns {
+      margin-left: 50px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .download:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    .nav-link {
+      margin: 0px 10px;
+    }
+
+    .nav-link:hover {
+      color: #f0f0f0;
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+    }
+
+    .logo-img:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      color: black;
+      background-color: white;
+    }
+
+    #darkModeToggle {
+      cursor: pointer;
+    }
+
+    :root {
+      --primary-color: white;
+    }
+
+    .dark-mode {
+      background-color: #1c2331;
+      color: white;
+    }
+
+    .dark-mode .navbar {
+      background-color: #333;
+    }
+
+    .dark-mode .card {
+        color: white;
+    }
+
+    .dark-mode .card:hover {
+        box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.5);
+    }
+
+    #lightmode-text {
+      color: #fff;
+    }
+    #darkmode-text {
+      color: #fff;
+      display: none;
+    }
+      /* Carousel */
+    .managerImage{
+        width: 100%;
+        margin: auto;
+        border: none;
+        text-align: center;
+        background-color: transparent;
+    }
+    .card:hover {
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+        transform: none;
+    }
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .carousel-item {
+        background-color: transparent;
+    }
+    .teamCarousel{
+        width: 72%;
+        margin-top: 20px;
+        margin-inline: auto;
+        margin-bottom: 20px;
+    }
+    .revealText{
+        text-align: center;
+        margin: 15px;
+    }
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <img src="images/logo.png" alt="Netra" height="50px" width="auto"
+            class="logo-img" onclick="window.scrollTo(0, 0)" style="cursor: pointer;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse menubtns" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="" onclick="window.scrollTo(0, 0)">Home</a>
+            <a class="nav-link" href="#schedule">Schedule</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#contact">Contact</a>
+          </div>
+        </div>
+  
+        <ul class="nav justify-content-end">
+          <li style="display: flex; align-items: center; gap: 10px;">
+            <span class="material-symbols-outlined" id="lightmode-text">Light mode</span>
+            <span class="material-symbols-outlined" id="darkmode-text">Dark mode</span>
+            <img src="toggle-off.png" id="darkModeToggle" onclick="toggleDarkMode()">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="images/NETRA.pdf" download>
+              <button class="btn btn-light download" style="font-weight: 500; font-size: 16px;">Download Brochure</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>    
+    <!-- Team heads Reveals -->
+    <h1 class="revealText">Meet Our Campaign .....</h1>
+    <div class="container">
+        <div class="row g-5">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 managerImage">
+                    <img src="./teamImages/Campaign Manager1.png" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <p class="card-text">Campaign Manager</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 managerImage">
+                    <img src="./teamImages/Admin.png" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <p class="card-text">Campaign Admin</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 managerImage">
+                    <img src="./teamImages/Campaign Manager2.png" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <p class="card-text">Campaign Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team Reveals -->
+    <h1 class="revealText">Meet Our Team</h1>
+    <div id="carouselExampleCaptions" class="carousel slide teamCarousel" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active rounded-4 overflow-hidden">
+            <img src="./teamImages/PR Team.png" class="d-block w-100" alt="PR Team">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Public Relations Team</h5>
+              <!-- <p>names....</p> -->
+            </div>
+          </div>
+          <div class="carousel-item rounded-4 overflow-hidden">
+            <img src="./teamImages/Technical Team.jpeg" class="d-block w-100" alt="Technical Team">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Technical Team</h5>
+              <!-- <p>nmes....r</p> -->
+            </div>
+          </div>
+          <div class="carousel-item rounded-4 overflow-hidden">
+            <img src="./teamImages/Finance Team.png" class="d-block w-100" alt="Finance Team">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Finance Team</h5>
+              <!-- <p>names....</p> -->
+            </div>
+          </div>
+          <div class="carousel-item rounded-4 overflow-hidden">
+            <img src="./teamImages/Events Team.png" class="d-block w-100" alt="Events Team">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Events Team</h5>
+              <!-- <p>names....</p> -->
+            </div>
+          </div>
+          <div class="carousel-item rounded-4 overflow-hidden">
+            <img src="./teamImages/Design Team.png" class="d-block w-100" alt="Design Team">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Design Team</h5>
+              <!-- <p>names....</p> -->
+            </div>
+          </div>
+          <div class="carousel-item rounded-4 overflow-hidden">
+            <img src="./teamImages/Editorial Team.png" class="d-block w-100" alt="Editorial Team">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Editorial Team</h5>
+              <!-- <p>names....</p> -->
+            </div>
+          </div>
+          <div class="carousel-item rounded-4 overflow-hidden">
+            <img src="./teamImages/Logistics Team.jpeg" class="d-block w-100" alt="Logistics Team">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Logistics Team</h5>
+              <!-- <p>names....</p> -->
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+      <!-- Footer -->
+    <footer class="text-center text-lg-start text-white" id="contact"
+    style="background-color: #1c2331; position: relative; bottom: 0; left: 0; width: 100%;">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-between p-4" style="background-color: #008138">
+        <!-- Left -->
+        <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+        <!-- Right -->
+        <div>
+        <a href="https://www.instagram.com/netra_campaign/" class="text-white me-4 text-decoration-none">
+            <i class="fab fa-instagram fa-2xl"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/netra-campaign/" class="text-white me-4 text-decoration-none">
+            <i class="fab fa-linkedin fa-2xl"></i>
+        </a>
+        </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">NETRA CAMPAIGN</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #008138; height: 2px"
+                />
+                <p>Illuminating the path to eye health</p> 
+                <p>Raising Glaucoma awareness</p> 
+                <p>Join the vision revolution</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #008138; height: 2px"
+                />
+            <p>
+                <a href="#home" class="text-white">Home</a>
+            </p>
+            <p>
+                <a href="#schedule" class="text-white">Schedule</a>
+            </p>
+            <p>
+                <a href="#about" class="text-white">About</a>
+            </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Other Resources</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #008138; height: 2px"
+                />
+            <p>
+                <a href="https://glaucoma.org/glaucoma-facts-and-stats/" class="text-white">Glaucoma Facts</a>
+            </p>
+            <p>
+                <a href="https://glaucoma.org/what-can-i-do-to-prevent-glaucoma/" class="text-white">Prevention Tips</a>
+            </p>
+            <p>
+                <a href="https://glaucoma.org/learn-about-glaucoma/treating-glaucoma/" class="text-white">Treatment Options</a>
+            </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #008138; height: 2px"
+                />
+            <p><i class="fas fa-home mr-3"></i> <a href="https://www.nmims.edu/" class="text-white">NMIMS, Navi Mumbai</a></p>
+            <p><i class="fas fa-envelope mr-3"></i> <a href="mailto:netracampaign@gmail" class="text-white">netracampaign@gmail.com</a></p>
+            <p><i class="fas fa-phone mr-3"></i> <a href="tel:+91 84529 96098" class="text-white">+91 84529 96098</a></p>
+            <p><i class="fas fa-phone mr-3"></i> <a href="tel:+91 80802 23716" class="text-white">+91 80802 23716</a></p>
+            </div>
+            <!-- Grid column -->
+        </div>
+        </div>
+    </section>
+    <!-- Section: Links  -->
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    Netra © 2024 Copyright:
+    <a class="text-white" href="https://glaucoma.org">All rights reserved.</a>
+    </div>
+    <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var darkModeToggle = document.getElementById("darkModeToggle");
+    var dark = document.getElementById("darkmode-text");
+    var light = document.getElementById("lightmode-text");
+    var prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (prefersDarkMode) {
+      document.body.classList.add("dark-mode");
+      darkModeToggle.src = "./toggle-on.png";
+      light.style.display = "none";
+      dark.style.display = "inline-block";
+    }
+
+    darkModeToggle.addEventListener("click", toggleDarkMode);
+
+    function toggleDarkMode() {
+      var body = document.body;
+      body.classList.toggle("dark-mode");
+
+      if (body.classList.contains("dark-mode")) {
+        darkModeToggle.src = "./toggle-on.png";
+        light.style.display = "none";
+        dark.style.display = "inline-block";
+      } else {
+        darkModeToggle.src = "./toggle-off.png";
+        dark.style.display = "none";
+        light.style.display = "inline-block";
+      }
+    }
+  });
+</script>
+</body>
+</html>
