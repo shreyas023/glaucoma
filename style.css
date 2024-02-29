@@ -1,7 +1,245 @@
-*{
+* {
     scroll-behavior: smooth;
 }
-body{
+body {
     scroll-behavior: smooth;
+}
+.span {
+    font-weight: bold;
+}
 
+.btn-custom {
+    background-color: #57ad44;
+    color: white;
 }
+
+.btn-custom:hover {
+    background-color: #008138;
+    color: white;
+    transition: all;
+    transition-duration: 300ms;
+    box-shadow: 2.5px 2.5px #57ad44;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #4caf50;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    color: white;
+    padding: 15px 22px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+}
+
+.download-button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #4caf50;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 30px;
+    color: #57ad44;
+}
+
+.about {
+    padding: 8px 10px 10px 8px;
+    color: #008138;
+    transition: 0.3s;
+}
+
+.about:hover {
+    color: #4caf50;
+}
+
+.text-format {
+    font-weight: 400;
+    padding: 8px 10px 10px 8px;
+    font-size: 17px;
+}
+
+.text-format-i {
+    font-weight: 400;
+    padding: 8px 10px 10px 8px;
+    font-size: 17px;
+    font-style: italic;
+    color: #57ad44;
+    transition: 0.3s;
+}
+
+.text-format-i:hover {
+    color: #008138;
+}
+
+/* Hover animation for cards */
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.navbar {
+    background-color: #57ad44;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f0f0f0;
+}
+
+body {
+    padding-top: 100px;
+}
+
+.menubtns {
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.download:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.nav-link {
+    margin: 0px 10px;
+}
+
+.nav-link:hover {
+    color: #f0f0f0;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    background-color: #008138;
+    color: white;
+}
+
+.btn-custom:hover {
+    color: black;
+    background-color: white;
+}
+
+#darkModeToggle {
+    cursor: pointer;
+}
+
+:root {
+    --primary-color: white;
+}
+
+.dark-mode {
+    background-color: #1c2331;
+    color: white;
+}
+
+.dark-mode .navbar {
+    background-color: #333;
+}
+
+#lightmode-text {
+    color: #fff;
+}
+#darkmode-text {
+    color: #fff;
+    display: none;
+}
+/* table styles */
+
+.event-table {
+    width: 100%;
+    border-radius: 10px !important;
+}
+
+.event-table th {
+    background-color: #4caf50;
+    color: #ddd;
+}
+
+.event-table td,
+.event-table th {
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+.event-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.event-table tr:hover {
+    background-color: #ddd;
+}
+
+.dark-mode .event-table td {
+    background-color: #1c2331;
+    color: #ddd;
+}
+
+.event-table td:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+  /* Carousel */
+  .managerImage{
+    width: 100%;
+    margin: auto;
+    border: none;
+    text-align: center;
+    background-color: transparent;
+}
+.card:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    transform: none;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.carousel-item {
+    background-color: transparent;
+}
+.teamCarousel{
+    width: 72%;
+    margin-top: 20px;
+    margin-inline: auto;
+    margin-bottom: 20px;
+}
+.revealText{
+    text-align: center;
+    margin: 15px;
+}
+
+/* video  */
+video {
+    max-width: 100%;
+    max-height: 100%;
+    width: 300px;
+    height: auto;
+  }

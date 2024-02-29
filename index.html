@@ -12,183 +12,9 @@
   <script src="https://kit.fontawesome.com/7982dd6bf1.js" crossorigin="anonymous"></script>
   <link rel="icon" href="images/favicon-96x96.png">
   <title>Netra</title>
-  <style>
-    .span {
-      font-weight: bold;
-    }
-
-    .btn-custom {
-      background-color: #57ad44;
-      color: white;
-    }
-
-    .btn-custom:hover {
-      background-color: #008138;
-      color: white;
-      transition: all;
-      transition-duration: 300ms;
-      box-shadow: 2.5px 2.5px #57ad44;
-    }
-
-    .card:hover {
-      transform: scale(1.1);
-      transition: all;
-      transition-duration: 300ms;
-    }
-
-    .download-button {
-      display: inline-block;
-      background-color: #4CAF50;
-      border: 2px solid transparent;
-      border-radius: 15px;
-      color: white;
-      padding: 15px 22px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 16px;
-      margin: 4px 2px;
-      transition-duration: 0.4s;
-    }
-
-    .download-button:hover {
-      background-color: white;
-      color: black;
-      border: 2px solid #4CAF50;
-    }
-
-    .bold {
-      font-weight: bold;
-      font-size: 30px;
-      color: #57ad44;
-    }
-
-    .about {
-      padding: 8px 10px 10px 8px;
-      color: #008138;
-      transition: 0.3s;
-    }
-
-    .about:hover {
-      color: #4CAF50;
-    }
-
-    .text-format {
-      font-weight: 400;
-      padding: 8px 10px 10px 8px;
-      font-size: 17px;
-    }
-
-    .text-format-i {
-      font-weight: 400;
-      padding: 8px 10px 10px 8px;
-      font-size: 17px;
-      font-style: italic;
-      color: #57ad44;
-      transition: 0.3s;
-    }
-
-    .text-format-i:hover {
-      color: #008138;
-    }
-
-    /* Hover animation for cards */
-    .card:hover {
-      transform: scale(1.05);
-      transition: transform 0.3s ease;
-    }
-
-    .navbar {
-      background-color: #57ad44;
-    }
-
-    .navbar-brand {
-      color: white;
-      font-weight: bold;
-    }
-
-    .navbar-nav .nav-link {
-      color: white;
-    }
-
-    .navbar-nav .nav-link:hover {
-      color: #f0f0f0;
-    }
-
-    body {
-      padding-top: 100px;
-    }
-
-    .menubtns {
-      margin-left: 50px;
-      font-size: 20px;
-      font-weight: 500;
-    }
-
-    .download:hover {
-      transform: scale(1.05);
-      transition: transform 0.3s ease;
-    }
-
-    .nav-link {
-      margin: 0px 10px;
-    }
-
-    .nav-link:hover {
-      color: #f0f0f0;
-      transform: scale(1.1);
-      transition: transform 0.3s ease;
-    }
-
-    .logo-img:hover {
-      transform: scale(1.1);
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-      transition: transform 0.3s ease;
-      background-color: #008138;
-      color: white;
-    }
-
-    .btn-custom:hover {
-      color: black;
-      background-color: white;
-    }
-
-    #darkModeToggle {
-      cursor: pointer;
-    }
-
-    :root {
-      --primary-color: white;
-    }
-
-    .dark-mode {
-      background-color: #1c2331;
-      color: white;
-    }
-
-    .dark-mode .navbar {
-      background-color: #333;
-    }
-
-    #lightmode-text {
-      color: #fff;
-    }
-    #darkmode-text {
-      color: #fff;
-      display: none;
-    }
-
-/* Add other dark mode styles here */
-
-  </style>
 </head>
 
 <body>
-
-
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
 
@@ -201,10 +27,11 @@
 
       <div class="collapse navbar-collapse menubtns" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link" href="" onclick="window.scrollTo(0, 0)">Home</a>
-          <a class="nav-link" href="#schedule">Schedule</a>
+          <a class="nav-link" href="#top">Home</a>
+          <a class="nav-link" href="schedule.html">Schedule</a>
           <a class="nav-link" href="#about">About</a>
           <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="team_reveal.html">Team</a>
         </div>
       </div>
 
@@ -216,7 +43,10 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="images/NETRA.pdf" download>
-            <button class="btn btn-light download" style="font-weight: 500; font-size: 16px;">Download Brochure</button>
+            <button class="btn btn-light download" style="font-weight: 500; font-size: 16px;">
+              Brochure
+              <img src="images/dwnld-btm.png" alt="" height="24px">
+            </button>
           </a>
         </li>
       </ul>
@@ -247,7 +77,7 @@
     </div>
   </div>
 
-  <div class="container my-4">
+  <!-- <div class="container my-4">
     <h4 class="card-title bold mb-5 mt-5 text-center" id="schedule">Schedule</h4>
     <h5>Day 1 (March 11, 2024)</h5><br>
     <div class="row">
@@ -383,14 +213,14 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="accordion container mt-5 mb-5" id="accordionExample">
     <h4 class="card-title bold mb-5 mt-5 text-center" id="about">About Glaucoma</h4>
     <div class="accordion-item">
       <h2 class="accordion-header">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-          aria-expanded="true" aria-controls="collapseOne">
+          aria-expanded="true" aria-controls="collapseOne" style="background-color: #008138; color: white;">
           <strong>What is Glaucoma?</strong>
         </button>
       </h2>
@@ -403,10 +233,11 @@
             surgery to lower intraocular pressure and preserve vision.
         </div>
       </div>
+      </div>
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color: #008138;color: white;">
             <strong>Symptoms of Glaucoma</strong>
           </button>
         </h2>
@@ -430,7 +261,7 @@
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-color: #008138;color: white;">
             <strong>Treatment Options</strong>
           </button>
         </h2>
@@ -450,22 +281,15 @@
             <p class="card-text text-format">It's important to consult an eye care professional for proper diagnosis and
               management if you suspect you may have glaucoma.</p>
           </div>
-        </div>
       </div>
     </div>
   </div>
- </div>
-</div>
-
-
-
-
 
   <!-- Footer -->
   <footer class="text-center text-lg-start text-white" id="contact"
-    style="background-color: #1c2331; position: relative; bottom: 0; left: 0; width: 100%;">
+    style="background-color: #333; position: relative; bottom: 0; left: 0; width: 100%;">
     <!-- Section: Social media -->
-    <section class="d-flex justify-content-between p-4" style="background-color: #008138">
+    <section class="d-flex justify-content-between p-4" style="background-color: #333; border: 1px solid #000;">
       <!-- Left -->
       <div class="me-5">
         <span>Get connected with us on social networks:</span>
@@ -572,66 +396,13 @@
 
 
   <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+  <div class="text-center p-3" style="background-color: #333;border: 1px solid #000;">
     Netra © 2024 Copyright:
     <a class="text-white" href="https://glaucoma.org">All rights reserved.</a>
   </div>
   <!-- Copyright -->
 </footer>
-
-
-
-<!-- Footer -->
-
-  <script>
-    var cards = document.querySelectorAll('#card-hover');
-
-    cards.forEach(card => {
-      var btn = card.querySelector('a');
-      card.addEventListener('mouseover', function () {
-        btn.classList.add('btn-custom-hover');
-      })
-
-      card.addEventListener('mouseout', function () {
-        btn.classList.remove('btn-custom-hover');
-      });
-    }
-    )
-
-    document.addEventListener('DOMContentLoaded', function() {
-    var darkModeToggle = document.getElementById("darkModeToggle");
-    var dark = document.getElementById("darkmode-text");
-    var light = document.getElementById("lightmode-text");
-    var prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    if (prefersDarkMode) {
-      document.body.classList.add("dark-mode");
-      darkModeToggle.src = "./toggle-on.png";
-      light.style.display = "none";
-      dark.style.display = "inline-block";
-    }
-
-    darkModeToggle.addEventListener("click", toggleDarkMode);
-
-    function toggleDarkMode() {
-      var body = document.body;
-      body.classList.toggle("dark-mode");
-
-      if (body.classList.contains("dark-mode")) {
-        darkModeToggle.src = "./toggle-on.png";
-        light.style.display = "none";
-        dark.style.display = "inline-block";
-      } else {
-        darkModeToggle.src = "./toggle-off.png";
-        dark.style.display = "none";
-        light.style.display = "inline-block";
-      }
-    }
-  });
-  </script>
-
-
-
+  <script src="script.js"></script>
 </body>
 
 
