@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
       darkModeToggle.src = "./toggle-on.png";
       light.style.display = "none";
       dark.style.display = "inline-block";
+      document.getElementById("schedule").classList.add("dark-mode");
+      document.getElementById("team").classList.add("dark-mode");
     }
 
     darkModeToggle.addEventListener("click", toggleDarkMode);
@@ -42,6 +44,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
   });
 
-  document.getElementById("bg-video").addEventListener("ended", function() {
-    window.location.href = "./index.html";
-  });
+
