@@ -303,7 +303,7 @@ body {
     margin: 15px;
 }
 
-.dark-mode .card-text {
+.dark-mode .managerImage .card-text {
     color: white;
 }
 .card-text {
