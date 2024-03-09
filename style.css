@@ -8,10 +8,33 @@ body {
     font-weight: bold;
 }
 
-@media only screen and (max-width: 600px) {
-    .container {
-      font-size: 14px;
+@media screen and (max-width: 1100px) {
+    .container,.container-fluid,.nav-link,.nav-item ,.btn,.card-text{
+        font-size: 14px;
     }
+    .logo-img{
+        height: 40px;
+    }
+    .col div p{
+        font-size: 14px;
+    }
+    .card-title,#about{
+        font-size: 20px;
+    }
+    .card-subtitle{
+        font-size: 16px;
+    }
+    .col img{
+        height: 200px;
+        width: auto;
+    }
+    .accordion-body p, .accordion-body li{
+        font-size: 14px;
+    }    
+}
+
+@media only screen and (max-width: 600px) {
+
     .row {
       flex-direction: column;
     }
@@ -69,8 +92,27 @@ body {
     .justify-content-center {
         align-items: center;
     }
+    .btn{
+        font-size: 12px;
+    }
+    .me-5{
+        font-size: 12px;
+    }
+    .me-4 i{
+        font-size: 12px;
+    }
 }
 
+.toggler{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 6px;
+}
+.btn{
+    font-weight: 500;
+    font-size: 16px;
+}
 .btn-custom {
     background-color: #57ad44;
     color: white;
